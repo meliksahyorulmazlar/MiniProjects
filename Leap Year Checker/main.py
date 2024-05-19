@@ -4,7 +4,7 @@
 #but if it is divisible by 4 and 100 (1700,1800,1900) it is not a leap year
 #if all other conditions are false then it is a leap year 2004,2008,2012,2016,2020,2024 and so on
 
-def leap_year(year:int):
+def leap_year(year:int)->bool:
     if year % 4 != 0:
         return False
     elif year % 4 ==0 and year % 400 == 0:
