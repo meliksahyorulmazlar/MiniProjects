@@ -3,16 +3,16 @@
 
 def calculate_love(name1:str,name2:str) -> None:
     both_names:str = name1.lower()+name2.lower()
-    t = both_names.count("t")
-    r = both_names.count("r")
-    u = both_names.count("u")
-    e = both_names.count("e")
-    l = both_names.count("l")
-    o = both_names.count("o")
-    v = both_names.count("v")
-    first = str(t+r+u+e)
-    second = str(l+o+v+e)
-    total = int(first+second)
+    t:int = both_names.count("t")
+    r:int = both_names.count("r")
+    u:int = both_names.count("u")
+    e:int = both_names.count("e")
+    l:int = both_names.count("l")
+    o:int = both_names.count("o")
+    v:int = both_names.count("v")
+    first:str = str(t+r+u+e)
+    second:str = str(l+o+v+e)
+    total:int = int(first+second)
     if total < 10 or total > 90:
         print(f"Your score is {total}, you go together like coke and mentos.")
     elif total > 40 and  total < 50:
