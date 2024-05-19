@@ -1,6 +1,6 @@
 #Metric System for the BMI calculator (Body mass index)
 
-def bmi_calculate(weight:float,height:float):
+def bmi_calculate(weight:float,height:float)->None:
   #The way you calculate bmi is the weight in kilograms divided by the height in meters to the power of 2
   bmi:float = weight/pow(height,2)
   state = ""
