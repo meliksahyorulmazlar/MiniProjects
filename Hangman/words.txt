@@ -1,0 +1,10 @@
+marker
+window
+treasure
+journey
+bicycle
+lantern
+mystery
+whisper
+glacier
+melody
