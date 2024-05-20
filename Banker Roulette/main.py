@@ -14,8 +14,7 @@ def banker_roulette()->None:
     bankers:list = []
     adding_people:bool = True
     while adding_people:
-        new_user = input(
-            "Write one of the names that will participate in banker roulette and if you have wrote all the names write STOP\n")
+        new_user = input("Write one of the names that will participate in banker roulette and if you have wrote all the names write STOP\n")
         if new_user == "STOP" or new_user.lower() == "stop":
             adding_people = False
         elif new_user in bankers:
