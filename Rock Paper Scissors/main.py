@@ -15,7 +15,7 @@ import random
 
 def play(user_input:int)->None:
     computers_choice:int = random.randint(0,2)
-    user_win_cases:dict = {1:0,2:1,0:2}
+    user_win_cases:dict[int,int] = {1:0,2:1,0:2}
     options: dict = {'0': "rock", "1": "paper", "2": "scissors"}
     print(f"The computer chose {options[str(computers_choice)]}")
     if computers_choice == users_choice:
@@ -29,7 +29,7 @@ def play(user_input:int)->None:
 
 
 if __name__ == "__main__":
-    options:dict = {'0':"rock","1":"paper","2":"scissors"}
+    options:dict[str,str] = {'0':"rock","1":"paper","2":"scissors"}
     game_works:bool = True
     while game_works:
         users_choice:str = input("enter 0 for rock, enter 1 for paper and 2 for scissors\n")
