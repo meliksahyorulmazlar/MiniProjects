@@ -1,15 +1,15 @@
 
-def fib(n:int):
+def fib(n:int)->None:
     #using lists
     fib_list:list = [0,1]
     if n<3:
-        print(fib_list)
+        print(fib_list[:n-1])
     else:
         for i in range(1,n-1):
             fib_list.append(fib_list[i]+fib_list[i-1])
         print(fib_list)
 
-def recursive_fib(n:int):
+def recursive_fib(n:int)->int:
     if n ==1:
         return 0
     elif n == 2:
@@ -20,9 +20,9 @@ def recursive_fib(n:int):
 
 def sub_fib(n:int):
     if n == 1:
-        return 0
+        print(0)
     elif n <= 3:
-        return 1
+        print(1)
     else:
         a = 1
         b = 1
@@ -37,6 +37,8 @@ def sub_fib(n:int):
 
 
 if __name__ == "__main__":
-    fib(100)
-    sub_fib(100)
+    # fib(n) prints you a list up to the nth fibonnacci number
+    #recursive_fib(n) returns the nth fibonnacci number using recursion
+    #sub_fib(n) prints the nth fibonnacci number using a substitution method
+    
     
