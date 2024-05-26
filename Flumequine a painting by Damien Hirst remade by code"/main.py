@@ -3,6 +3,10 @@ import random
 import colorgram
 from turtle import Turtle,Screen
 
+#https://www.masterworksfineart.com/acquire/inquire/id/W-7567#btn
+#https://hypemuseum.jp/products/flumequine-damien-hirst
+#A million dollar painting painted in python
+
 
 
 rgb_colors = []
