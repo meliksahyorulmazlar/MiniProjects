@@ -4,7 +4,7 @@
 #https://leetcode.com/problems/fizz-buzz/
 if __name__ == "__main__":
     for number in range(1,101):
-        if number % 3 == 0 and number % 5 == 0:
+        if number % 15 == 0:
             print("fizzbuzz")
         elif number % 3 == 0:
             print("fizz")
