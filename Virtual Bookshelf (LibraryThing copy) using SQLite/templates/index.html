@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>My Library</h1>
+    {% if count ==0 %}
+    <p>Your library is empty...</p>
+    {% else %}
+    <ul>
+        {% for book in books%}
+        <li>{{book.title}} by {{book.author}} : {{book.rating}}/10.0 <a href="/edit/{{book.id}}">Edit</a> <a href="/delete/{{book.id}}">Delete</a></li>
+
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <a href="/add">Add a new book</a>
+
+</body>
+</html>

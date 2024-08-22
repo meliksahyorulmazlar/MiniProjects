@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Rating</title>
+</head>
+<body>
+  <h1>Edit Rating</h1>
+  <form action="/edit/{{id}}" method="POST" novalidate>
+      {{form.csrf_token}}
+      <div>
+          {{form.rating.label}}
+          <br>
+          {{form.rating(size=30)}}
+          {% for error in form.rating.errors %}
+          <span>{{error}}</span>
+          {% endfor %}
+      </div>
+      {{form.submit}}
+  </form>
+</body>
+</html>

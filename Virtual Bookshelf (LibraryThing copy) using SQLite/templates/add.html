@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Books</title>
+</head>
+<body>
+    <h1>Add a new book</h1>
+    <form action="/add" method="POST">
+        {{form.csrf_token}}
+        <div>
+            {{form.title.label}}
+            <br>
+            {{form.title(size=30)}}
+            {% for error in form.title.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{form.author.label}}
+            <br>
+            {{form.author(size=30)}}
+            {% for error in form.author.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{form.rating.label}}
+            <br>
+            {{form.rating(size=30)}}
+            {% for error in form.rating.errors %}
+            <span>{{error}}</span>
+            {% endfor %}
+        </div>
+        {{form.submit}}
+    </form>
+
+</body>
+</html>
